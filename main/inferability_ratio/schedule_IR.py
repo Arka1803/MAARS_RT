@@ -48,7 +48,7 @@ def calculate_inference_ratio(schedule, attacker_id, victim_id, sampling_period)
     print(f"Total Arrival Count: {total_arrival_count}")
     
     # Calculate Inference Ratio (IR)
-    if total_arrival_count == 0:  # To avoid division by zero
+    if total_arrival_count == 0:  
         IR = 0
     else:
         IR = (total_preemptions_count%total_arrival_count) / sampling_period if total_preemptions_count > 0 else 0
