@@ -9,6 +9,16 @@ The corresponding paper has been accepted at ICCPS in CPS-IOT Week 2025.
 
 MAARS: Multi-Rate Attack-Aware Randomized Scheduling for Securing Real-time Systems, Arkaprava Sain, Sunandan Adhikary, Ipsita Koley, Soumyajit Dey, Dept. of CSE, Indian Institute of Technology Kharagpur, India
 
+
+# Requirements
+
+- Python version 3.11
+
+### Required Packages
+
+- `numpy`
+- `matplotlib`
+
 # Usage
 
 ```bash
