@@ -43,6 +43,11 @@ python3 [python-file-name].py
 ```
 * Execute the [python-file-name].py to generate the schedules of the task set. The user can copy the task-set data to the code and generate schedules.
 * The schedules are generated in the directory \main\data\schedules \[scheduler-directory]\[scheduler-name].txt
+```bash
+#To generate schedules together run the script 
+python3 MAARS_multitaskset.py
+````
+
 
 #### Attack Probability
 ```bash
@@ -51,6 +56,11 @@ python3 attack_probability.py
 ```
 Takes the \main\data\schedules \[scheduler-directory]\[scheduler-name].txt file as input and outputs CSV file in \data\attack_probability directory. 
 
+```bash
+#To generate AP with parse arguments go to \main\attack_probability  
+python3 AP_parser.py [file_name] [--v_i V_I] [--v_p V_P] [--a_i A_I]
+```
+
 #### Inferability Ratio
 ```bash
 # Execute the Script inside \main\attack_prabability
@@ -58,6 +68,11 @@ python3 schedule_IR.py
 ```
 Takes the \main\data\schedules \[scheduler-directory]\[scheduler-name].txt file as input and outputs CSV file in \data\inferability_ratio directory. 
 
+
+```bash
+#To generate IR with parse arguments go to \main\inferability_ratio  
+python3 AP_parser.py [file_name] [--v_i V_I] [--v_p V_P] [--a_i A_I]
+```
 
 ````
 The user can use these scripts to collect data by changing the task-set parameters (no.of tasks, utilization, hyperperiod etc.) and accordingly generate schedules and anlayse their inferability ratio and attack_probability. 
