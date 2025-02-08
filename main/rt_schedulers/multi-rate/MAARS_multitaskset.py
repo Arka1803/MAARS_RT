@@ -25,7 +25,7 @@ def read_task_file(file_path):
         lines = f.readlines()
     for i, line in enumerate(lines):
         period, execution_time = map(int, line.split())
-        tasks.append(Task(task_id=i + 1, priority=i + 1, periods=[period, period*2], execution_time=execution_time))
+        tasks.append(Task(task_id=i + 1, priority=i + 1, periods=[period, period*2, period*3], execution_time=execution_time))
     return tasks
 
 # Scheduling tasks based on permutations of periods
@@ -39,11 +39,11 @@ def schedule_tasks(tasks, hyperperiod):
 
         # Check if any tasks have arrived
         for task in tasks:
-            if current_time % task.periods[current_time % len(task.periods)] == 0:  # Handle permuted periods
+            if current_time % task.periods[current_time % len(task.periods)] == 0:  
                 heapq.heappush(task_queue, task)
 
         if task_queue:
-            random.shuffle(task_queue)  # Shuffle tasks to simulate randomness (if desired)
+            random.shuffle(task_queue)  # Shuffle between active jobs
             current_task = heapq.heappop(task_queue)
             current_task.remaining_time -= 1
             scheduled_tasks.append(current_task.task_id)
