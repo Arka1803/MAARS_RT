@@ -26,6 +26,10 @@ MAARS: Multi-Rate Attack-Aware Randomized Scheduling for Securing Real-time Syst
 git clone https://github.com/yourusername/your-repo-name.git
 ```
 
+The paths in the code are set for windows environment. For using in linux replace them with appropriate path: 
+
+
+
 
 #### Task Set generation
 ```bash
@@ -73,6 +77,9 @@ Takes the \main\data\schedules \[scheduler-directory]\[scheduler-name].txt file 
 #To generate IR with parse arguments go to \main\inferability_ratio  
 python3 IR_parser.py [file_name] [--v_i V_I] [--v_p V_P] [--a_i A_I]
 ```
+
+
+
 
 ````
 The user can use these scripts to collect data by changing the task-set parameters (no.of tasks, utilization, hyperperiod etc.) and accordingly generate schedules and anlayse their inferability ratio and attack_probability. 
