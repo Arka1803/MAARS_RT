@@ -71,7 +71,7 @@ Takes the \main\data\schedules \[scheduler-directory]\[scheduler-name].txt file 
 
 ```bash
 #To generate IR with parse arguments go to \main\inferability_ratio  
-python3 AP_parser.py [file_name] [--v_i V_I] [--v_p V_P] [--a_i A_I]
+python3 IR_parser.py [file_name] [--v_i V_I] [--v_p V_P] [--a_i A_I]
 ```
 
 ````
