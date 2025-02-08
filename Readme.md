@@ -52,7 +52,7 @@ python3 MAARS_multitaskset.py
 #### Attack Probability
 ```bash
 # Execute the Script inside \main\attack_prabability
-python3 attack_probability.py
+python3 AP_manual.py
 ```
 Takes the \main\data\schedules \[scheduler-directory]\[scheduler-name].txt file as input and outputs CSV file in \data\attack_probability directory. 
 
@@ -64,7 +64,7 @@ python3 AP_parser.py [file_name] [--v_i V_I] [--v_p V_P] [--a_i A_I]
 #### Inferability Ratio
 ```bash
 # Execute the Script inside \main\attack_prabability
-python3 schedule_IR.py
+python3 IR_manual.py
 ```
 Takes the \main\data\schedules \[scheduler-directory]\[scheduler-name].txt file as input and outputs CSV file in \data\inferability_ratio directory. 
 
