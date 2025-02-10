@@ -20,7 +20,7 @@ This codebase is designed to generate multi-rate schedules from task sets produc
 cd main/generate_task_set
 python3 task_set_generate_randfixedsum.py
 ```
-* This prompts the user to take 3 inputs - (i) Desired utilization range, which the user can give multiple task utilization range with comma separation, e.g. {0.02-0.18, 0.22-0.38,..}, (ii) the number of tasks e.g. $5,10,15..$ (iii) Hyperperiod length e.g. $120, 1000$.Note that taking a very high number of tasks with lengthy hyperperiods will be very time-consuming. 
+* This prompts the user to take 3 inputs - (i) Desired utilization range, which the user can give multiple task utilization range with comma separation, e.g. {0.02-0.18, 0.22-0.38,..}, (ii) the number of tasks e.g. $5,10,15..$ (iii) Hyperperiod length e.g. $120, 1000$.Note that taking a very high number of tasks with lengthy hyperperiods will be very time-consuming. The plot in both (fig.7 and 8) will be generated for given input in image
 ![alt text](pic_input.png)
 
 
