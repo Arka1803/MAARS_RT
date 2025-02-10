@@ -45,7 +45,6 @@ _Note that taking a very high number of tasks with lengthy hyperperiods will tak
 * Run this script from the `/main/rt_schedulers/multi_rate` directory.
 
 ```bash
-cd ../rt_schedulers/multi-rate
 python3 MAARS_multitaskset.py
 ```
 * Each schedule text file contains lists having sequences of task IDs representing corresponding task IDs. 
