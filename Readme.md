@@ -25,7 +25,7 @@ The MAARS framework is designed to generate and analyze multi-rate schedules for
 
 The commands to perform these steps are given below:
 
-## Step 1: Task Set generation
+## Step 1: Generate Synthetic Task Sets
 * To generate synthetic task-sets execute the below script from  `MAARS_RT/main/generate_task_set` directory.
 ```bash
 python3 task_set_generate_randfixedsum.py
@@ -39,7 +39,7 @@ _Note that taking a very high number of tasks with lengthy hyperperiods will tak
 
 ![alt text](pic_input.png)
 
-## Step 2: Schedule generation
+## Step 2: Generate Multi-Rate Schedules
 
 * The script `MAARS_multitaskset.py` generates schedules of all the task sets at once in the directory `main/data/schedules`. This process may take a few minutes. 
 * Run this script from the `/main/rt_schedulers/multi_rate` directory.
@@ -52,7 +52,7 @@ python3 MAARS_multitaskset.py
  
 _Note that to limit the running time, the no. of schedules has been limited to 100. This can be modified as per requirement._
 
-## Step-3: Collect and Plot Inferability Ratio Data (for Fig.7)
+## Step-3: Compute Inferability Ratio (IR) (Reproduce plot for Fig.7)
 
 * The script `IR_parser.py` should be ran with parse arguments inside `/main/inferability_ratio `. An example is given below:
 
@@ -71,7 +71,7 @@ matlab -nodisplay -nosplash -r "MAARS; FP_rand;"
 ```
 
 
-## Step-4: Collect and Plot Attack Probability Data (Produce data for Fig.8)
+## Step-4: Compute Attack Probability (AP) (Reproduce plot for Fig.8)
 
 * The attack probabilities are averaged and plotted in Fig.8. To generate AP plot execute `AP_plot.py` from `/main/attack_probability` 
 
