@@ -23,8 +23,9 @@ The MAARS framework is designed to generate and analyze multi-rate schedules for
 
 3. __Compute Attack Probability (AP)__ : The generated schedules are analyzed to determine the probability of an attack based on specific experimental parameters, with results stored in CSV format and visualized as plots. The script `AP_plot.py --v_i <victim_id> --a_i <attacker_id>` performs this.
 
-The commands to perform these steps are given below in details. Clone the repository:
+The commands to perform these steps are given below in details. 
 
+First clone the repository
 ```bash
 git clone https://github.com/Arka1803/MAARS_RT.git
 ```
@@ -100,6 +101,8 @@ Without parse arguments the default `<victim_id>` and `<attacker_id>` is set to 
 * The experimental parameters such as attack-effective windows (AEW), attack and victim task IDs and sampling rate of victim task will be different for each task set. The output is a CSV file that is stored in the `main/data/attack_probability` with the name `P_[file_name].csv.` 
 
 * This script reads the schedule files located at `main/data/schedules/` as its input. The results are exported as a CSV file to the `data/attack_probability` directory and then plots the average of probabilities.
+
+* In each CSV file attack probability corresponding to eaqch schedule present in text file is in column 1. Overall the average probbailities are saved at 3rd column of `summary.csv` file.
 
 
 # Publication
