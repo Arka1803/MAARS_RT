@@ -1,13 +1,13 @@
 import os
 import argparse
 import glob
-import pandas as pd
+# import pandas as pd
 import matplotlib.pyplot as plt
 import csv
 from collections import defaultdict
 import ast
 import numpy as np
-import pandas as pd
+
 
 def process_file(file_name, output_folder, summary_data, file_count, victim_id, attacker_id):
     
