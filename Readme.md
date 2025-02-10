@@ -68,15 +68,13 @@ Example: python3 IR_parser.py schedule_util_0.02-0.18_tasks_5.txt --v_i 1 --v_p 
 ```
 * The experimental parameters such as attack-effective windows (AEW), attack and victim task IDs and sampling rate of victim task will be different for each task set. The output is a CSV file that is stored in the main/data/inferability_ratio with the name IR_[file_name].csv
 
-* Fig.7 experimental data plotes are given in \plotting\matlab directory.
+* Fig.7 experimental data plots are given in \plotting\matlab directory.
 
 ```bash
 Execute the .m files inside
 >FP_rand.m 
 >MAARS.m
 ```
-
-
 # Publication
 
 The corresponding paper has been accepted at ICCPS in CPS-IOT Week 2025.
