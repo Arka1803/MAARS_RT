@@ -93,6 +93,6 @@ def process_task_files(input_folder, output_folder):
             print(f"Processed {file_name}: {total_schedules} schedules saved to {output_file}")
 
 # Example usage:
-input_folder = "main\\data\\task_set"
-output_folder = "main\\data\\schedules"
+input_folder = "..\\data\\task_set"
+output_folder = "..\\data\\schedules"
 process_task_files(input_folder, output_folder)
