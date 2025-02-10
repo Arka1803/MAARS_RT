@@ -44,7 +44,7 @@ python3 AP_parser.py schedule_util_0.02-0.18_tasks_5.txt --v_i 1 --v_p 20 --a_i 
 ```
 * The experimental parameters such as attack-effective windows (AEW), attack and victim task IDs and sampling rate of victim task will be different for each task set. The output is a CSV file that is stored in the main/data/attack_probability with the name P_[file_name].csv. 
 
-* The attack probabilities are averaged and plotted in Fig.8. #To generate AP plot directly execute this inside 
+* The attack probabilities are averaged and plotted in Fig.8. To generate AP plot directly execute this inside 
 ```bash
 cd main/attack_probability
 python3 AP_plot.py
