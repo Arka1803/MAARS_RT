@@ -61,8 +61,7 @@ python3 IR_parser.py schedule_util_0.02-0.18_tasks_5.txt --v_i 1 --v_p 20 --a_i 
 
 ```bash
 cd ../../Plotting/matlab_plot_codes
->FP_rand.m 
->MAARS.m
+matlab -nodisplay -r "MAARS,FP_rand; exit"
 ```
 # Publication
 
