@@ -40,18 +40,17 @@ python3 task_set_generate_randfixedsum.py
 # Execute the Scripts inside \main\rt_schedulers
 python3 MAARS_multitaskset.py
 ```
-Execute the [python-file-name].py to generate the schedules of the task set. The user can copy the task-set data to the code and generate schedules. The schedules are generated in the directory \main\data\schedules \[scheduler-directory]\[scheduler-name].txt
 
 #### Step-3: Collect Attack Probability Data (Produce data for Fig. 8)
 
-Takes the schedule file located at main/data/schedules/ as its input. The results are exported as a CSV file to the data/attack_probability directory. This script takes 4 inputs (i) Schedule text file (ii) victim task ID (iii) attacker task ID (iv) victim sampling rate. To execute the script go to the directory \texttt{main/attack_probability}. The script AP_parser.py should be ran with parse arguments such as : 
+* Takes the schedule file located at main/data/schedules/ as its input. The results are exported as a CSV file to the data/attack_probability directory. The script AP_parser.py should be ran with parse arguments such as : 
 ```bash
 #To generate AP with parse arguments go to \main\attack_probability  
 python3 AP_parser.py file_name --v_i victim_id --v_p victim_period --a_i attacker_id
 
 Example: python3 AP_parser.py schedule_util_0.02-0.18_tasks_5.txt --v_i 1 --v_p 20 --a_i 4
 ```
-The experimental parameters such as attack-effective windows (AEW), attack and victim task IDs and sampling rate of victim task will be different for each task set. The output is a CSV file that is stored in the main/data/attack_probability with the name P_[file_name].csv. The attack probabilities are averaged and plotted in Fig.8
+* The experimental parameters such as attack-effective windows (AEW), attack and victim task IDs and sampling rate of victim task will be different for each task set. The output is a CSV file that is stored in the main/data/attack_probability with the name P_[file_name].csv. The attack probabilities are averaged and plotted in Fig.8
 ```bash
 #To generate AP plot directly execute this inside \main\attack_probability 
 python3 AP_plot.py
@@ -59,8 +58,7 @@ python3 AP_plot.py
 
 #### Inferability Ratio
 
-Takes the schedule file located at main/data/schedules/ as its input. The results are exported as a CSV file to the data/inferability_ratio directory. This script takes 4 inputs (i) Schedule text file (ii) victim task ID (iii) attacker task ID (iv) victim sampling rate. To execute the script go to the directory main/inferability_ratio. The script
-IR_parser.py should be ran with parse arguments such as :
+* IR_parser.py should be ran with parse arguments such as :
 
 ```bash
 #To generate AP with parse arguments go to \main\inferability_ratio 
@@ -68,8 +66,15 @@ python3 IR_parser.py file_name --v_i victim_id --v_p victim_period --a_i attacke
 
 Example: python3 IR_parser.py schedule_util_0.02-0.18_tasks_5.txt --v_i 1 --v_p 20 --a_i 4
 ```
-The experimental parameters such as attack-effective windows (AEW), attack and victim task IDs and sampling rate of victim task will be different for each task set. The output is a CSV file that is stored in the main/data/inferability_ratio with the name IR_[file_name].csv
+* The experimental parameters such as attack-effective windows (AEW), attack and victim task IDs and sampling rate of victim task will be different for each task set. The output is a CSV file that is stored in the main/data/inferability_ratio with the name IR_[file_name].csv
 
+* Fig.7 experimental data plotes are given in \plotting\matlab directory.
+
+```bash
+Execute the .m files inside
+>FP_rand.m 
+>MAARS.m
+```
 
 
 # Publication
