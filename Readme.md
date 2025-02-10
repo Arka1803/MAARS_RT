@@ -45,7 +45,7 @@ _Note that taking a very high number of tasks with lengthy hyperperiods will tak
 ![alt text](pic_input.png)
 
 * Output files are generated inside `/main/data/task_set` directory.
-
+* In each text file, first column is the task period and 2nd column is task execution time.
 
 ## Step 2: Generate Multi-Rate Schedules
 
@@ -58,6 +58,9 @@ python3 MAARS_multitaskset.py
 _Note that to limit the running time, the no. of schedules has been limited to 100. This can be modified as per requirement._
 
 * The script `MAARS_multitaskset.py` generates schedules of all the task sets at once in the directory `main/data/schedules`. Each schedule text file contains lists having sequences of task IDs representing corresponding task IDs. 
+* In each schedule text file, each sequence inside `[]` is one schedule corresponding to the task set file.
+
+
 
 ## Step-3: Compute Inferability Ratio (IR) (Reproduce plot for Fig.7)
 
