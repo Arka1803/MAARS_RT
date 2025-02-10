@@ -48,7 +48,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('file_name', type=str, help='File name to take as input')
     parser.add_argument('--v_i', type=int, default=1, help='Victim ID (default: 1)')
-    parser.add_argument('--v_p', type=int, default=16, help='Victim period (default: 16)')
+    parser.add_argument('--v_p', type=int, default=12, help='Victim period (default: 16)')
     parser.add_argument('--a_i', type=int, default=4, help='Attacker ID (default: 4)')
     args = parser.parse_args()
     

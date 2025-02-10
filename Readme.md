@@ -70,6 +70,8 @@ An example has been given below:
 python3 IR_parser.py schedule_util_0.02-0.18_tasks_5.txt --v_i 1 --v_p 12 --a_i 4
 ```
 
+* Without parse arguments the default `<victim_id>`, `<attacker_id>` and `<victim_period>` is set to 1,4 and 12 respectively.
+
 * The output is a CSV file that is stored in the `main/data/inferability_ratio `with the name `IR_[file_name].csv`, where inferability ratio is plotted in 2nd column against every schedule.
 
 ### Plotting Experimental Data (Fig.7)
