@@ -1,7 +1,5 @@
 % Read the CSV file
-% data = readtable('TaskShuffler_v3.csv');
-data = readtable('schedule_entropy_data_v4.csv');
-data = readtable('Taskshuffler_v3.csv');
+data = readtable('MAARS_combined_tasks_sets_IR_data.csv');
 
 % Extract unique task counts
 task_counts = unique(data.TaskCount);
@@ -55,4 +53,4 @@ ylim([0 1]); % Assuming Inferability Rate (ScheduleEntropy) is between 0 and 1
 hold off;
 
 % Save the plot as an image (optional)
-saveas(gcf, 'inferability_rate_plot_gray.png');
+saveas(gcf, 'inferability_rate_MAARS_plot_gray.png');
